@@ -1,1 +1,1 @@
-# effective-python
+# Effective Python
