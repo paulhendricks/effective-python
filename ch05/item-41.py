@@ -23,7 +23,7 @@ def gcd(pair):
 
 def main_1():
     start = time.time()
-    results = list(map(gcd, numbers))
+    list(map(gcd, numbers))
     end = time.time()
     return 'Took %.3f seconds' % (end - start)
 
@@ -31,7 +31,7 @@ def main_1():
 def main_2():
     start = time.time()
     pool = ThreadPoolExecutor(max_workers=8)
-    results = list(pool.map(gcd, numbers))
+    list(pool.map(gcd, numbers))
     end = time.time()
     return 'Took %.3f seconds' % (end - start)
 
