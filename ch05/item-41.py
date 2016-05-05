@@ -39,7 +39,7 @@ def main_2():
 def main_3():
     start = time.time()
     pool = ProcessPoolExecutor(max_workers=8)
-    results = list(pool.map(gcd, numbers))
+    list(pool.map(gcd, numbers))
     end = time.time()
     return 'Took %.3f seconds' % (end - start)
 
